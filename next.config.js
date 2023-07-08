@@ -1,21 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        appDir: true,
-        serverComponentsExternalPackages: ["mongoose"],
-    },
-    output: "standalone",
+    reactStrictMode: true,
+    swcMinify: true,
+    output: 'standalone',
+    compress: false,
     images: {
-        domains: ['lh3.googleusercontent.com'],
-        unoptimized: true
-    },
-    webpack(config) {
-        config.experiments = {
-            ...config.experiments,
-            topLevelAwait: true,
-        }
-        return config
+      unoptimized: true
     }
-}
-
-module.exports = nextConfig
+  }
+  
+  module.exports = nextConfig
