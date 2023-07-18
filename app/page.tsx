@@ -9,7 +9,7 @@ const Home = () => {
         <span className='orange_gradient text-center'>AI Sudpromp</span>
       </h1>
       <p className='text-center desc'>
-        Sudpromp is another project of sudsierspace in his journey of making the world a good place to talk with people
+        Sudpromp, you can share some nice AI prompts
       </p>
 
       <Feed />
